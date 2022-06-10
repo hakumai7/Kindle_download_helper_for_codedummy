@@ -251,7 +251,7 @@ if __name__ == "__main__":
     if not os.path.exists(DEFAULT_OUT_DIR):
         os.makedirs(DEFAULT_OUT_DIR)
     kindle = Kindle(
-        csrf_token, domain, DEFAULT_OUT_DIR, cut_length
+        csrftoken, domain, DEFAULT_OUT_DIR, cut_length
     )
     if startindex is None or startindex=='':
         startindex=1
